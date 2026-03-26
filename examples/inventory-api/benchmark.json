@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-03-25T14:32:07.123Z",
+  "model": "claude-sonnet-4-20250514",
+  "steps": [
+    {
+      "step": "scaffold",
+      "durationMs": 8432,
+      "inputTokens": 1847,
+      "outputTokens": 6234,
+      "cost": 0.0989
+    },
+    {
+      "step": "tests",
+      "durationMs": 6891,
+      "inputTokens": 8294,
+      "outputTokens": 4512,
+      "cost": 0.0926
+    },
+    {
+      "step": "docs",
+      "durationMs": 4217,
+      "inputTokens": 8147,
+      "outputTokens": 3089,
+      "cost": 0.0708
+    },
+    {
+      "step": "review",
+      "durationMs": 3965,
+      "inputTokens": 12683,
+      "outputTokens": 2147,
+      "cost": 0.0703
+    }
+  ],
+  "totals": {
+    "durationMs": 23505,
+    "inputTokens": 30971,
+    "outputTokens": 15982,
+    "cost": 0.3326
+  }
+}

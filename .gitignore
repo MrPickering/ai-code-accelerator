@@ -3,4 +3,4 @@ output/*
 !output/.gitkeep
 .env
 *.raw-response.txt
-benchmark.json
+/benchmark.json

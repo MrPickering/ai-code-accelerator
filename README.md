@@ -1,5 +1,7 @@
 # AI Code Accelerator
 
+> Part of the [PickBits.ai](https://pickbits.ai) portfolio — AI tools that demonstrate real-world productivity gains with Claude.
+
 A CLI tool that uses Claude to generate complete project scaffolds, test suites, API documentation, and code review checklists from a plain-English specification -- replacing 4+ hours of software engineering busywork in under 60 seconds.
 
 ## How It Works
@@ -57,6 +59,18 @@ Options:
   --benchmark       Show token usage + timing breakdown
   -h, --help        Display help
 ```
+
+## Example Output
+
+Want to see what this tool produces without running it? Browse the pre-generated example:
+
+- [`examples/inventory-api/src/`](examples/inventory-api/src/) — Express server with CRUD routes, validation, auth middleware
+- [`examples/inventory-api/tests/`](examples/inventory-api/tests/) — Jest test suite with mocked DB
+- [`examples/inventory-api/docs/API.md`](examples/inventory-api/docs/API.md) — Full endpoint documentation with curl examples
+- [`examples/inventory-api/review/REVIEW.md`](examples/inventory-api/review/REVIEW.md) — 20-item code review checklist with severity ratings
+- [`examples/inventory-api/benchmark.json`](examples/inventory-api/benchmark.json) — 23.5s total, $0.33 cost
+
+Generated from [`data/specs/inventory-api.md`](data/specs/inventory-api.md) in a single run.
 
 ## Sample Specs
 
@@ -118,6 +132,19 @@ ai-code-accelerator/
 
 - Node.js 18+
 - An [Anthropic API key](https://console.anthropic.com/)
+
+## PickBits.ai Portfolio
+
+This is one of six AI-powered tools built with Claude:
+
+| Tool | Audience | Stack |
+|------|----------|-------|
+| **[ai-code-accelerator](https://github.com/MrPickering/ai-code-accelerator)** | Software Engineers | Node.js |
+| **[ai-incident-resolver](https://github.com/MrPickering/ai-incident-resolver)** | DevOps / SRE | Python |
+| **[ai-project-dashboard](https://github.com/MrPickering/ai-project-dashboard)** | Project Managers | Python |
+| **[ai-ticket-triage](https://github.com/MrPickering/ai-ticket-triage)** | IT Support | Node.js |
+| **[ai-threat-analyst](https://github.com/MrPickering/ai-threat-analyst)** | Security Analysts | Python |
+| **[ai-data-analyst](https://github.com/MrPickering/ai-data-analyst)** | Data Analysts | Python |
 
 ## License
 

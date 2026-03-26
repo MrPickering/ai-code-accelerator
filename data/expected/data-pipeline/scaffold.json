@@ -1,0 +1,33 @@
+{
+  "files": [
+    {"path": "package.json", "purpose": "Project manifest"},
+    {"path": ".gitignore", "purpose": "Git ignore rules"},
+    {"path": ".env.example", "purpose": "Environment variable template"},
+    {"path": "src/index.js", "purpose": "Pipeline CLI entry point"},
+    {"path": "src/pipeline.js", "purpose": "Pipeline orchestrator"},
+    {"path": "src/stages/extract.js", "purpose": "S3 file extraction"},
+    {"path": "src/stages/validate.js", "purpose": "Schema validation"},
+    {"path": "src/stages/clean.js", "purpose": "Data cleaning (dedup, normalize)"},
+    {"path": "src/stages/transform.js", "purpose": "Field mapping and type coercion"},
+    {"path": "src/stages/load.js", "purpose": "PostgreSQL bulk insert/upsert"},
+    {"path": "src/quarantine.js", "purpose": "Error quarantine management"},
+    {"path": "src/config.js", "purpose": "Config file loader and validator"},
+    {"path": "src/db.js", "purpose": "Database connection and helpers"},
+    {"path": "src/logger.js", "purpose": "Winston logger setup"},
+    {"path": "config/sample-config.json", "purpose": "Example pipeline configuration"},
+    {"path": "src/db/schema.sql", "purpose": "Database schema DDL"}
+  ],
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.400.0",
+    "pg": "^8.11.0",
+    "csv-parser": "^3.0.0",
+    "commander": "^11.0.0",
+    "winston": "^3.10.0",
+    "node-cron": "^3.0.0",
+    "dotenv": "^16.3.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

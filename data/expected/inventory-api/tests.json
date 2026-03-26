@@ -1,0 +1,14 @@
+{
+  "testFiles": [
+    {"path": "tests/routes/products.test.js", "coverage": ["CRUD operations", "pagination", "filtering", "stock adjustment", "validation errors", "auth required"]},
+    {"path": "tests/routes/categories.test.js", "coverage": ["CRUD operations", "nested categories", "category with products", "validation"]},
+    {"path": "tests/routes/suppliers.test.js", "coverage": ["CRUD operations", "supplier with products", "validation"]},
+    {"path": "tests/routes/auth.test.js", "coverage": ["registration", "login", "invalid credentials", "token validation"]},
+    {"path": "tests/middleware/auth.test.js", "coverage": ["valid token", "missing token", "expired token", "malformed token"]},
+    {"path": "tests/middleware/rateLimiter.test.js", "coverage": ["within limit", "exceeds limit", "limit reset"]},
+    {"path": "tests/models/product.test.js", "coverage": ["create", "read", "update", "delete", "search", "low stock query"]}
+  ],
+  "testFramework": "jest",
+  "testCommand": "npm test",
+  "estimatedCoverage": "85%"
+}

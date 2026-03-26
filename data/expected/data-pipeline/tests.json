@@ -1,0 +1,14 @@
+{
+  "testFiles": [
+    {"path": "tests/stages/extract.test.js", "coverage": ["S3 file listing", "CSV stream reading", "S3 error handling", "file pattern matching"]},
+    {"path": "tests/stages/validate.test.js", "coverage": ["valid records", "missing required fields", "type validation", "enum validation", "email format"]},
+    {"path": "tests/stages/clean.test.js", "coverage": ["deduplication", "date normalization", "null handling", "whitespace trimming", "enum case normalization"]},
+    {"path": "tests/stages/transform.test.js", "coverage": ["field mapping", "computed fields", "type coercion", "missing optional fields"]},
+    {"path": "tests/stages/load.test.js", "coverage": ["batch insert", "upsert on conflict", "batch size handling", "connection error retry"]},
+    {"path": "tests/quarantine.test.js", "coverage": ["quarantine invalid records", "list quarantined", "retry quarantined"]},
+    {"path": "tests/pipeline.test.js", "coverage": ["full pipeline execution", "incremental load", "dry run mode", "partial failure handling"]}
+  ],
+  "testFramework": "jest",
+  "testCommand": "npm test",
+  "estimatedCoverage": "82%"
+}

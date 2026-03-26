@@ -1,0 +1,15 @@
+{
+  "testFiles": [
+    {"path": "tests/auth/register.test.js", "coverage": ["successful registration", "duplicate email", "invalid email format", "weak password"]},
+    {"path": "tests/auth/login.test.js", "coverage": ["successful login", "wrong password", "non-existent user", "rate limiting"]},
+    {"path": "tests/auth/refresh.test.js", "coverage": ["valid refresh", "expired token", "revoked token", "token rotation", "reuse detection"]},
+    {"path": "tests/oauth/authorize.test.js", "coverage": ["authorization code flow", "PKCE challenge", "invalid redirect_uri", "invalid client_id"]},
+    {"path": "tests/oauth/token.test.js", "coverage": ["code exchange", "PKCE verification", "expired code", "used code"]},
+    {"path": "tests/sessions/sessions.test.js", "coverage": ["list sessions", "revoke session", "unauthorized access"]},
+    {"path": "tests/password/reset.test.js", "coverage": ["request reset", "complete reset", "expired token", "invalid token"]},
+    {"path": "tests/middleware/authenticate.test.js", "coverage": ["valid token", "expired token", "missing token"]}
+  ],
+  "testFramework": "jest",
+  "testCommand": "npm test",
+  "estimatedCoverage": "88%"
+}

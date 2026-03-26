@@ -1,0 +1,20 @@
+{
+  "name": "ai-code-accelerator",
+  "version": "1.0.0",
+  "description": "CLI tool that uses Claude to generate project scaffolds, tests, docs, and code reviews from a spec file",
+  "type": "module",
+  "bin": {
+    "ai-code-accelerator": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.80.0",
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "ora": "^8.2.0"
+  },
+  "keywords": ["cli", "claude", "ai", "scaffold", "code-generation"],
+  "license": "MIT"
+}

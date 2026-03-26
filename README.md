@@ -16,17 +16,32 @@ Each step calls Claude with a specialized system prompt and builds on the output
 ## Quick Start
 
 ```bash
-# Install dependencies
+# 1. Clone and install
+git clone https://github.com/MrPickering/ai-code-accelerator.git
+cd ai-code-accelerator
 npm install
 
-# Set your Anthropic API key
+# 2. Configure your API key
+cp .env.example .env
+# Edit .env with your key from https://console.anthropic.com/
 export ANTHROPIC_API_KEY=your-key-here
 
-# Run against a sample spec
+# 3. Run against a sample spec
 node src/index.js --spec data/specs/inventory-api.md --benchmark
+```
 
-# Or provide an inline spec
-node src/index.js --inline "Build a REST API for a todo app with Express and SQLite"
+### Run as a CLI command
+
+```bash
+# Install globally via npm link
+npm link
+ai-code-accelerator --spec data/specs/inventory-api.md
+
+# Or run without global install
+npx . --spec data/specs/inventory-api.md
+
+# Inline specs work too
+ai-code-accelerator --inline "Build a REST API for a todo app with Express and SQLite"
 ```
 
 ## Usage

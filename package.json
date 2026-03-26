@@ -7,7 +7,9 @@
     "ai-code-accelerator": "./src/index.js"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.80.0",
@@ -15,6 +17,15 @@
     "commander": "^14.0.0",
     "ora": "^8.2.0"
   },
-  "keywords": ["cli", "claude", "ai", "scaffold", "code-generation"],
-  "license": "MIT"
+  "keywords": [
+    "cli",
+    "claude",
+    "ai",
+    "scaffold",
+    "code-generation"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^4.1.1"
+  }
 }

@@ -12,7 +12,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.80.0",
+    "@anthropic-ai/sdk": "^0.91.1",
     "chalk": "^5.4.1",
     "commander": "^14.0.0",
     "ora": "^8.2.0"
